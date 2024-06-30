@@ -1,0 +1,10 @@
+node_modules/
+prisma/
+next-env.d.ts
+next.config.mjs
+package-lock.json
+package.json
+postcss.config.mjs
+tailwind.config.ts
+tsconfig.json
+.*
