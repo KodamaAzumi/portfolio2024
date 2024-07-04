@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import icon from '@/public/icon.svg';
+import nekoIcon from '@/public/neko-icon.svg';
 import PageDownArrow from './parts/pageDownArrow';
 
 export default function Top() {
@@ -9,7 +9,7 @@ export default function Top() {
         <div className="flex-auto flex items-start ">
           <Image
             className="m-auto w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] xl:w-[300px] xl:h-[300px]"
-            src={icon}
+            src={nekoIcon}
             alt="トップエリアの猫のアイコン"
             priority={true}
           />

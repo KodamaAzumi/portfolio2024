@@ -1,6 +1,6 @@
 import Top from './ui/top';
 import About from './ui/about';
-import Product from './ui/product';
+import Products from './ui/products';
 import Blog from './ui/blog';
 
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
     <div>
       <Top />
       <About />
-      <Product />
+      <Products />
       <Blog />
     </div>
   );
