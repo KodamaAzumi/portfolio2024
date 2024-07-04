@@ -33,7 +33,7 @@ export default function Products() {
             })}
           </div>
         </div>
-        <PageDownArrow explanation={'Blog'} />
+        {/* <PageDownArrow explanation={'Blog'} /> */}
       </div>
       <ProductPopUps
         currentProductStatus={currentProductStatus}

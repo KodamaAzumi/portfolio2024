@@ -1,7 +1,7 @@
 import Top from './ui/top';
 import About from './ui/about';
 import Products from './ui/products';
-import Blog from './ui/blog';
+// import Blog from './ui/blog';
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
       <Top />
       <About />
       <Products />
-      <Blog />
+      {/* <Blog /> */}
     </div>
   );
 }
