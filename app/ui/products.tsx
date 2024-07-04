@@ -1,6 +1,6 @@
 'use client';
 import ProductCard from './parts/productCard';
-import PageDownArrow from './parts/pageDownArrow';
+//import PageDownArrow from './parts/pageDownArrow';
 import { products } from '../lib/products';
 import ProductPopUps from './parts/productPopUps';
 import { useState } from 'react';
