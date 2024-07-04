@@ -22,9 +22,9 @@ export default function Header() {
           <Link className="mr-5 sm:mr-10 hover:underline hover:underline-offset-2" href="#products">
             PRODUCTS
           </Link>
-          <Link href="#blog" className="hover:underline hover:underline-offset-2">
+          {/* <Link href="#blog" className="hover:underline hover:underline-offset-2">
             BLOG
-          </Link>
+          </Link> */}
         </nav>
       </div>
     </header>
