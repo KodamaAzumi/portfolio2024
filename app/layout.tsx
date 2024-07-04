@@ -21,6 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
+      <head>
+        <link rel="icon" href="/icon?<generated>" type="image/<generated>" sizes="<generated>" />
+      </head>
       <body className={notoSansJapanese.className}>
         <div>
           <Header />
