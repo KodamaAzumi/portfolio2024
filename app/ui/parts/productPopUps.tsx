@@ -7,8 +7,6 @@ import CloseIcon from '../svgCompo/closeIcon';
 import ProductPopUpGallery from './productPopUpGallery';
 import clsx from 'clsx';
 
-let productsRev = products.reverse();
-
 type CurrentProductStatus = {
   id: string;
   status: string;
@@ -23,7 +21,7 @@ export default function ProductPopUps({
 }) {
   return (
     <>
-      {productsRev.map((product) => {
+      {products.map((product) => {
         const { id, title, time, explanation, url, skills, medium, images } = product;
         return currentProductStatus.id === id ? (
           <ProductPopUp
@@ -112,7 +110,7 @@ export function ProductPopUp({
             <CloseIcon />
           </div>
           <div className="flex flex-col md:flex-row md:justify-between w-full h-full overflow-y-auto">
-            <div className="md:w-[40%] flex flex-col justify-between mb-12 lg:mb-0 pt-12 sm:pt-4 md:pt-0">
+            <div className="md:w-[40%] flex flex-col mb-12 lg:mb-0 pt-12 sm:pt-4 md:pt-0">
               <div>
                 <div className="flex flex-col gap-y-2 mb-6">
                   <h3 className="font-bold text-2xl">{title}</h3>
@@ -120,7 +118,7 @@ export function ProductPopUp({
                   <hr className="border-[0.1px] border-[#4E4935]" />
                 </div>
                 <div className="px-2 mb-6">
-                  <p className="mb-4">{explanation}</p>
+                  <p className="mb-4 xl:text-lg xl:leading-relaxed">{explanation}</p>
                   <div className="flex flex-col gap-y-2 text-base font-bold text-sky-900">
                     {productLink && (
                       <Link href={productLink}>

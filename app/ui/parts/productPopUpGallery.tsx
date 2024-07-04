@@ -14,7 +14,7 @@ export default function ProductPopUpGallery({ images }: { images: Images[] }) {
 
   return (
     <div className="flex flex-col gap-y-6">
-      <ul className="w-[85%] m-auto flex gap-x-6">
+      <ul className="w-[90%] m-auto flex gap-3 flex-wrap justify-evenly">
         {images.map((image, index) =>
           index === currentImgIndex ? (
             <GalleryBtn
