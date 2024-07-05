@@ -1,13 +1,11 @@
 import mlAskImg1 from '@/public/products/ml-ask/image1.jpg';
 import mlAskImg2 from '@/public/products/ml-ask/image2.jpg';
 import mlAskImg3 from '@/public/products/ml-ask/image3.png';
-import growUiImg1 from '@/public/products/grow-ui/image1.jpg';
-import growUiImg2 from '@/public/products/grow-ui/image2.jpg';
-import growUiImg3 from '@/public/products/grow-ui/image3.jpg';
+import growUiImg1 from '@/public/products/grow-ui/image1.png';
+import growUiImg2 from '@/public/products/grow-ui/image2.png';
+import growUiImg3 from '@/public/products/grow-ui/image3.png';
 import growUiImg4 from '@/public/products/grow-ui/image4.png';
-import growUiImg5 from '@/public/products/grow-ui/image5.png';
-import growUiImg6 from '@/public/products/grow-ui/image6.png';
-import growUiImg7 from '@/public/products/grow-ui/image7.png';
+import growUiImg5 from '@/public/products/grow-ui/image5.jpg';
 import graduationExhibition2023Img1 from '@/public/products/graduationExhibition2023/image1.png';
 import graduationExhibition2023Img2 from '@/public/products/graduationExhibition2023/image2.png';
 import inputWebImg1 from '@/public/products/input-web/image1.png';
@@ -53,9 +51,9 @@ export const products = [
     title: '育てるUI',
     time: '2022年4月-12月',
     explanation:
-      'ユーザーがWebサイトなどを利用していく過程で、そのユーザー特有の様態に変化していくUIを「育てるUI」とし、そのテーマに沿って4つのGoogle Chrome 拡張機能を作りました。大学3年次の領域展では、Google Chrome 拡張機能を実際に使用して得た結果をグラフ化し、パネルにまとめて展示を行いました。拡張機能はGoogle ウェブストアから追加して利用することができます。',
+      'ユーザーがWebサイトなどを利用していく過程で、そのユーザー特有の様態に変化していくUIを「育てるUI」と定義し、そのテーマに沿って4つのGoogle Chrome 拡張機能を作りました。大学3年次の領域展では、Google Chrome 拡張機能を実際に使用して得た結果をグラフ化し、パネルにまとめて展示を行いました。拡張機能はGoogle ウェブストアから追加して利用することができます。',
     url: {
-      product: '',
+      product: '/grow-ui',
       github: '',
     },
     skills: ['HTML', 'CSS', 'JavaScript'],
@@ -64,37 +62,27 @@ export const products = [
       {
         id: 'growUiImg1',
         src: growUiImg1,
-        alt: '育てるUIのパネル1枚目',
+        alt: '押したものがどんどん小さくなる Google Chrome 拡張機能',
       },
       {
         id: 'growUiImg2',
         src: growUiImg2,
-        alt: '育てるUIのパネル2枚目',
+        alt: 'リンクが逃げる Google Chrome 拡張機能',
       },
       {
         id: 'growUiImg3',
         src: growUiImg3,
-        alt: '大学3年次の領域展で作品を展示している様子',
+        alt: 'カーソルが大きくなる Google Chrome 拡張機能',
       },
       {
         id: 'growUiImg4',
         src: growUiImg4,
-        alt: '押したものがどんどん小さくなる Google Chrome 拡張機能',
+        alt: 'マウスの軌跡を新しいタブに表示する Google Chrome 拡張機能',
       },
       {
         id: 'growUiImg5',
         src: growUiImg5,
-        alt: 'リンクが逃げる Google Chrome 拡張機能',
-      },
-      {
-        id: 'growUiImg6',
-        src: growUiImg6,
-        alt: 'カーソルが大きくなる Google Chrome 拡張機能',
-      },
-      {
-        id: 'growUiImg7',
-        src: growUiImg7,
-        alt: 'マウスの軌跡を新しいタブに表示する Google Chrome 拡張機能',
+        alt: '大学3年次の領域展で作品を展示している様子',
       },
     ],
   },
