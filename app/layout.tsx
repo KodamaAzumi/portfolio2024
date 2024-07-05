@@ -3,6 +3,7 @@ import { Noto_Sans_JP } from 'next/font/google';
 import './globals.css';
 import Header from './ui/header';
 import Footer from './ui/footer';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const notoSansJapanese = Noto_Sans_JP({
   subsets: ['latin'],
@@ -22,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <head>
+        <GoogleAnalytics gaId="G-TT2VXV1D26" />
         <link rel="icon" href="/icon?<generated>" type="image/<generated>" sizes="<generated>" />
       </head>
       <body className={notoSansJapanese.className}>
