@@ -20,7 +20,7 @@ export default function ProductPopUps({
   setCurrentProductStatus: React.Dispatch<React.SetStateAction<CurrentProductStatus>>;
 }) {
   return (
-    <>
+    <div>
       {products.map((product) => {
         const { id, title, time, explanation, url, skills, medium, images } = product;
         return currentProductStatus.id === id ? (
@@ -53,7 +53,7 @@ export default function ProductPopUps({
           />
         );
       })}
-    </>
+    </div>
   );
 }
 
@@ -89,7 +89,7 @@ export function ProductPopUp({
   setCurrentProductStatus,
 }: Props) {
   return (
-    <>
+    <div>
       <div
         className={clsx('fixed top-0 left-0 z-0 w-full h-full bg-black opacity-40', {
           hidden: status === 'hidden',
@@ -104,7 +104,7 @@ export function ProductPopUp({
       >
         <div className="bg-[#F9F8F4] text-[#4E4935] rounded-md max-w-[1200px] max-h-[700px] w-[94%] xs:w-[84%] md:w-[94%] lg:w-[84%] h-[90%] relative p-6 sm:p-12">
           <div
-            className="max-w-[40px] max-h-[40px] w-full h-full absolute top-5 right-6 hover:opacity-70"
+            className="max-w-[40px] max-h-[40px] w-full h-full absolute top-5 right-6 hover:opacity-70 z-10"
             onClick={() => setCurrentProductStatus({ id: '', status: '' })}
           >
             <CloseIcon />
@@ -149,6 +149,6 @@ export function ProductPopUp({
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
