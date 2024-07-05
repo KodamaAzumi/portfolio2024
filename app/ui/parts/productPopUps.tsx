@@ -29,8 +29,8 @@ export default function ProductPopUps({
             title={title}
             time={time}
             explanation={explanation}
-            productLink={url.product}
-            githubLink={url.github}
+            productUrl={url.product}
+            githubUrl={url.github}
             skills={skills}
             medium={medium}
             images={images}
@@ -43,8 +43,8 @@ export default function ProductPopUps({
             title={title}
             time={time}
             explanation={explanation}
-            productLink={url.product}
-            githubLink={url.github}
+            productUrl={url.product}
+            githubUrl={url.github}
             skills={skills}
             medium={medium}
             images={images}
@@ -67,8 +67,8 @@ type Props = {
   title: string;
   time: string;
   explanation: string;
-  productLink: string;
-  githubLink: string;
+  productUrl: string;
+  githubUrl: string;
   skills: string[];
   medium: string;
   images: Images[];
@@ -80,8 +80,8 @@ export function ProductPopUp({
   title,
   time,
   explanation,
-  productLink,
-  githubLink,
+  productUrl,
+  githubUrl,
   skills,
   medium,
   images,
@@ -120,13 +120,13 @@ export function ProductPopUp({
                 <div className="px-2 mb-6">
                   <p className="mb-4 xl:text-lg xl:leading-relaxed">{explanation}</p>
                   <div className="flex flex-col gap-y-2 text-base font-bold text-sky-900">
-                    {productLink && (
-                      <Link href={productLink}>
+                    {productUrl && (
+                      <Link href={productUrl}>
                         <span className="hover:underline">作品ページ</span>
                       </Link>
                     )}
-                    {githubLink && (
-                      <Link href={githubLink}>
+                    {githubUrl && (
+                      <Link href={githubUrl}>
                         <span className="hover:underline">GitHub</span>
                       </Link>
                     )}

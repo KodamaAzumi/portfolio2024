@@ -10,8 +10,8 @@ const notoSansJapanese = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: 'Portfolio & Blog Site',
-  description: 'ポートフォリオサイトとブログを組み合わせたサイト',
+  title: 'Portfolio 2024 by Kodama',
+  description: 'Kodamaのポートフォリオサイト',
 };
 
 export default function RootLayout({

@@ -20,7 +20,7 @@ export default function About() {
               />
             </div>
             <div className="w-2/3 sm:w-1/2 md:w-1/3 xl:w-1/4">
-              <h2 className="hidden md:block text-3xl xs:text-4xl font-bold mb-8">KODAMA</h2>
+              <h2 className="hidden md:block text-3xl xs:text-4xl font-bold mb-8">Kodama</h2>
               <p className="tex-base sm:text-lg font-medium mb-8">
                 名古屋造形大学情報表現領域出身。大学3年生の時に授業でJavaScriptの基礎を勉強して、プログラミングを始めました。大学では、主にWebを使った制作をしていました。
                 <br />

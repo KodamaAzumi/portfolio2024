@@ -15,7 +15,7 @@ export default function Top() {
           />
         </div>
 
-        <PageDownArrow explanation={'KODAMAについて'} />
+        <PageDownArrow explanation={'Kodamaについて'} />
       </div>
     </main>
   );
