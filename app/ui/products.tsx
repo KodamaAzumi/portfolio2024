@@ -11,11 +11,11 @@ export default function Products() {
   const [currentProductStatus, setCurrentProductStatus] = useState({ id: '', status: '' });
 
   return (
-    <section id="products" className="bg-white min-h-screen pt-24">
-      <div className="container text-[#4E4935] flex flex-col items-center max-w-full">
+    <section id="products" className="bg-white text-[#4E4935] py-24">
+      <div className="flex flex-col items-center gap-y-16">
         <h2 className="text-3xl xs:text-4xl font-bold">PRODUCTS</h2>
-        <div className="w-5/6 xs:w-3/4 sm:w-3/5 md:w-3/4 xl:w-3/5 py-16">
-          <div className=" grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="w-5/6 xs:w-3/4 sm:w-3/5 md:w-3/4 xl:w-3/5 max-w-[1020px]">
+          <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {productsRev.map((product) => {
               const { id, title, time, skills, medium, images } = product;
               return (

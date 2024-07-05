@@ -4,9 +4,9 @@ import nekoIcon from '@/public/neko-icon.svg';
 
 export default function Header() {
   return (
-    <header id="header" className="text-[#4E4935] bg-[#F9F8F4]">
-      <div className="container flex py-6 sm:py-8 px-4 xs:px-8 md:px-16">
-        <Link href="/" className="flex mr-8 xs:mr-10 sm:mr-20 items-center">
+    <header id="header" className="text-[#4E4935] bg-[#F9F8F4] py-6 sm:py-8">
+      <div className="flex w-[90%] m-auto">
+        <Link href="/" className="flex items-center mr-[6%]">
           <Image
             src={nekoIcon}
             alt="ヘッダーの猫のアイコン"
@@ -15,14 +15,14 @@ export default function Header() {
           />
           <h1 className="font-bold text-3xl hidden md:block">Kodama</h1>
         </Link>
-        <nav className="text-xs xs:text-sm sm:text-lg font-bold flex self-center">
-          <Link className="mr-5 sm:mr-10 hover:underline hover:underline-offset-2" href="#about">
+        <nav className="text-sm xs:text-base sm:text-lg font-bold flex items-center flex-wrap gap-x-5 sm:gap-x-10 gap-y-1">
+          <Link className="hover:underline hover:underline-offset-2" href="/#about">
             ABOUT
           </Link>
-          <Link className="mr-5 sm:mr-10 hover:underline hover:underline-offset-2" href="#products">
+          <Link className="hover:underline hover:underline-offset-2" href="/#products">
             PRODUCTS
           </Link>
-          {/* <Link href="#blog" className="hover:underline hover:underline-offset-2">
+          {/* <Link href="/#blog" className="hover:underline hover:underline-offset-2">
             BLOG
           </Link> */}
         </nav>

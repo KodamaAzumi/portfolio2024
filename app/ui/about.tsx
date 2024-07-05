@@ -7,7 +7,7 @@ import PageDownArrow from './parts/pageDownArrow';
 export default function About() {
   return (
     <section id="about" className="text-sky-900 bg-sky-300 md:h-screen">
-      <div className="container min-w-full h-full flex flex-col">
+      <div className="h-full flex flex-col">
         <div className="h-full flex flex-col items-center justify-center pt-20">
           <h2 className="md:hidden text-3xl xs:text-4xl font-bold mb-8">KODAMA</h2>
           <div className="flex flex-col md:flex-row items-center justify-center py-6">
@@ -40,7 +40,6 @@ export default function About() {
             </div>
           </div>
         </div>
-
         <PageDownArrow explanation={'作ったモノ'} />
       </div>
     </section>
