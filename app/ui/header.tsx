@@ -11,6 +11,9 @@ export default function Header() {
       <header id="header" className="text-[#4E4935] bg-[#F9F8F4] py-6 sm:py-8">
         <motion.div
           className="flex w-[90%] m-auto"
+          transition={{
+            duration: 0.8,
+          }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}

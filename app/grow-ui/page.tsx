@@ -13,6 +13,9 @@ export default function GrowUi() {
       <div className="text-[#4E4935] bg-[#F9F8F4] min-h-screen">
         <motion.div
           className="w-[90%] lg:w-[60%] m-auto py-12 flex flex-col gap-y-10"
+          transition={{
+            duration: 0.8,
+          }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}

@@ -8,6 +8,9 @@ export default function Top() {
     <main className="text-[#4E4935] bg-[#F9F8F4] h-[calc(100vh-98px)] sm:h-[calc(100vh-114px)]">
       <motion.div
         className="h-full flex flex-col"
+        transition={{
+          duration: 0.8,
+        }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
