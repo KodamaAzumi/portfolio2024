@@ -15,9 +15,10 @@ export default function TopNekoIcon({ className }: Props) {
   const CenterY = 166.287;
 
   // MotionValueへの登録
-  const rightEyeX = useMotionValue(rightEyeCenterX);
-  const leftEyeX = useMotionValue(rightEyeCenterX);
-  const y = useMotionValue(CenterY);
+  const rightEyeX = useMotionValue(111.741);
+  const leftEyeX = useMotionValue(212.599);
+  const rightEyeY = useMotionValue(143.221);
+  const leftEyeY = useMotionValue(147.233);
 
   const useConstrainedX = (
     x: MotionValue<number>,
@@ -61,7 +62,8 @@ export default function TopNekoIcon({ className }: Props) {
     const mouseY = event.clientY - svgRect.top;
     rightEyeX.set(mouseX);
     leftEyeX.set(mouseX);
-    y.set(mouseY);
+    rightEyeY.set(mouseY);
+    leftEyeY.set(mouseY);
   };
 
   return (
@@ -92,14 +94,28 @@ export default function TopNekoIcon({ className }: Props) {
         stroke-linecap="round"
       />
       <motion.circle
-        cx={useConstrainedX(rightEyeX, y, rightEyeCenterX, CenterY, innerRadius, outerRadius)}
-        cy={useConstrainedY(rightEyeX, y, rightEyeCenterX, CenterY, innerRadius, outerRadius)}
+        cx={useConstrainedX(
+          rightEyeX,
+          rightEyeY,
+          rightEyeCenterX,
+          CenterY,
+          innerRadius,
+          outerRadius
+        )}
+        cy={useConstrainedY(
+          rightEyeX,
+          rightEyeY,
+          rightEyeCenterX,
+          CenterY,
+          innerRadius,
+          outerRadius
+        )}
         r={innerRadius}
         fill="#4A4A4A"
       />
       <motion.circle
-        cx={useConstrainedX(leftEyeX, y, leftEyeCenterX, CenterY, innerRadius, outerRadius)}
-        cy={useConstrainedY(leftEyeX, y, leftEyeCenterX, CenterY, innerRadius, outerRadius)}
+        cx={useConstrainedX(leftEyeX, leftEyeY, leftEyeCenterX, CenterY, innerRadius, outerRadius)}
+        cy={useConstrainedY(leftEyeX, leftEyeY, leftEyeCenterX, CenterY, innerRadius, outerRadius)}
         r={innerRadius}
         fill="#4A4A4A"
       />
