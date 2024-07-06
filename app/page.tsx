@@ -1,12 +1,16 @@
+'use client';
 import Top from './ui/top';
 import About from './ui/about';
 import Products from './ui/products';
 // import Blog from './ui/blog';
+import { AnimatePresence } from 'framer-motion';
 
 export default function Home() {
   return (
     <div>
-      <Top />
+      <AnimatePresence mode="wait">
+        <Top />
+      </AnimatePresence>
       <About />
       <Products />
       {/* <Blog /> */}
