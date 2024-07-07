@@ -14,6 +14,10 @@ import inputWebImg3 from '@/public/products/input-web/image3.png';
 import inputWebImg4 from '@/public/products/input-web/image4.jpg';
 import inputWebImg5 from '@/public/products/input-web/image5.png';
 import inputWebImg6 from '@/public/products/input-web/image6.jpg';
+import portfolioImg1 from '@/public/products/portfolio/image1.png';
+import portfolioImg2 from '@/public/products/portfolio/image2.png';
+import portfolioImg3 from '@/public/products/portfolio/image3.jpg';
+import portfolioImg4 from '@/public/products/portfolio/image4.png';
 
 export const products = [
   {
@@ -155,6 +159,42 @@ export const products = [
         id: 'inputWebImg6',
         src: inputWebImg6,
         alt: '名古屋造形大学2024年卒業展示の様子',
+      },
+    ],
+  },
+  {
+    id: 'portfolio',
+    title: 'Kodamaのポートフォリオ',
+    time: '2024年4月-7月',
+    explanation:
+      'Next.jsの勉強のアウトプットを兼ねて制作したポートフォリオサイトです。figmaでデザインのイメージを作り、ChatGPTを頼りにTypeScriptにも挑戦しました。アニメーションはReactのライブラリであるFramer Motionで実装しました。',
+    url: {
+      product: 'https://portfolio2024-kodama.vercel.app/',
+      github: 'https://github.com/KodamaAzumi/portfolio2024',
+    },
+
+    skills: ['Next.js', 'Tailwind CSS', 'TypeScript', 'Framer Motion'],
+    medium: 'Web',
+    images: [
+      {
+        id: 'portfolioImg1',
+        src: portfolioImg1,
+        alt: 'ポートフォリオサイトのパソコンサイズのスクリーンショット',
+      },
+      {
+        id: 'portfolioImg2',
+        src: portfolioImg2,
+        alt: 'ポートフォリオサイトのスマホサイズのスクリーンショット',
+      },
+      {
+        id: 'portfolioImg3',
+        src: portfolioImg3,
+        alt: 'ポートフォリオサイトのデザインイメージ',
+      },
+      {
+        id: 'portfolioImg4',
+        src: portfolioImg4,
+        alt: 'ポートフォリオサイトのポップアップデザインイメージ',
       },
     ],
   },
