@@ -1,14 +1,32 @@
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import nekoIcon from '@/public/neko-icon.svg';
 import github_mark_white from '@/public/github-mark-white.svg';
 import PageDownArrow from './parts/pageDownArrow';
+import { motion } from 'framer-motion';
 
 export default function About() {
   return (
     <section id="about" className="text-sky-900 bg-sky-300 md:h-screen">
       <div className="h-full flex flex-col">
-        <div className="h-full flex flex-col items-center justify-center pt-20">
+        <motion.div
+          className="h-full flex flex-col items-center justify-center pt-20"
+          transition={{
+            duration: 0.8,
+            delay: 0.2,
+          }}
+          initial={{
+            opacity: 0,
+            y: 20,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          viewport={{ once: true }}
+          key="about-content-animation"
+        >
           <h2 className="md:hidden text-3xl xs:text-4xl font-bold mb-8">Kodama</h2>
           <div className="flex flex-col md:flex-row items-center justify-center py-6">
             <div className="mb-8 md:mb-0 md:mr-8">
@@ -39,8 +57,19 @@ export default function About() {
               </Link>
             </div>
           </div>
-        </div>
-        <PageDownArrow explanation={'作ったモノ'} />
+        </motion.div>
+        <motion.div
+          transition={{
+            duration: 0.5,
+            delay: 0.2,
+          }}
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          key="about-pageDownArrow-animation"
+        >
+          <PageDownArrow explanation={'作ったモノ'} />
+        </motion.div>
       </div>
     </section>
   );

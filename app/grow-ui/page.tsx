@@ -14,11 +14,12 @@ export default function GrowUi() {
         <motion.div
           className="w-[90%] lg:w-[60%] m-auto py-12 flex flex-col gap-y-10"
           transition={{
-            duration: 0.8,
+            duration: 0.5,
           }}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 20 }}
+          key="growUi-animation"
         >
           <div className="flex flex-col gap-4 lg:gap-6">
             <h2 className="text-2xl lg:text-3xl font-bold">育てるUIについて</h2>
