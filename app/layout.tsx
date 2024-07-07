@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja">
+    <html lang="ja" className="scroll-smooth">
       <head>
         <GoogleAnalytics gaId="G-TT2VXV1D26" />
         <link rel="icon" href="/icon?<generated>" type="image/<generated>" sizes="<generated>" />
