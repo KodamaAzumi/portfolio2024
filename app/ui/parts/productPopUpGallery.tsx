@@ -2,6 +2,7 @@
 import Image, { StaticImageData } from 'next/image';
 import clsx from 'clsx';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 type Images = {
   id: string;
@@ -77,13 +78,15 @@ export function GalleryBtn({
 
 export function GalleryImg({ image, status }: { image: Images; status: string }) {
   return (
-    <li
+    <motion.li
       className={clsx('drop-shadow-md', {
         hidden: status === 'hidden',
         inlineBlock: status === ' inline-block',
       })}
+      animate={status === 'block' ? { y: [4, 0] } : {}}
+      transition={{ type: 'spring' }}
     >
       <Image src={image.src} alt={image.alt} priority={true} />
-    </li>
+    </motion.li>
   );
 }
