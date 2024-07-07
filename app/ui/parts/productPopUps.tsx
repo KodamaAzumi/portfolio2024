@@ -1,3 +1,4 @@
+'use client';
 import { StaticImageData } from 'next/image';
 import CreateTime from './createTime';
 import Link from 'next/link';
@@ -6,6 +7,7 @@ import { products } from '../../lib/products';
 import CloseIcon from '../svgCompo/closeIcon';
 import ProductPopUpGallery from './productPopUpGallery';
 import clsx from 'clsx';
+import { motion } from 'framer-motion';
 
 type CurrentProductStatus = {
   id: string;
@@ -102,7 +104,11 @@ export function ProductPopUp({
           flex: status === 'visible',
         })}
       >
-        <div className="bg-[#F9F8F4] text-[#4E4935] rounded-md max-w-[1200px] max-h-[700px] w-[94%] xs:w-[84%] md:w-[94%] lg:w-[84%] h-[90%] relative p-6 sm:p-12">
+        <motion.div
+          className="bg-[#F9F8F4] text-[#4E4935] rounded-md max-w-[1200px] max-h-[700px] w-[94%] xs:w-[84%] md:w-[94%] lg:w-[84%] h-[90%] relative p-6 sm:p-12"
+          animate={status === 'visible' ? { scale: [0.98, 1] } : {}}
+          transition={{ type: 'spring' }}
+        >
           <div
             className="max-w-[40px] max-h-[40px] w-full h-full absolute top-5 right-6 hover:opacity-70 z-10"
             onClick={() => setCurrentProductStatus({ id: '', status: '' })}
@@ -147,7 +153,7 @@ export function ProductPopUp({
               <ProductPopUpGallery images={images} />
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
