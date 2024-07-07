@@ -6,7 +6,7 @@ type Props = {
 
 export default function PageDownArrow({ explanation }: Props) {
   return (
-    <div className="w-full py-10 cursor-pointer">
+    <div className="w-full py-10 cursor-default">
       <p className="text-center font-bold text-base xs:text-lg mb-2">{explanation}</p>
       <Arrow_down_double />
     </div>
