@@ -17,6 +17,7 @@ export default function Header() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
+          key="header-animation"
         >
           <Link href="/" className="flex items-center mr-[6%]">
             <Image

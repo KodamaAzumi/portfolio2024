@@ -112,12 +112,14 @@ export default function TopNekoIcon({ className }: Props) {
         )}
         r={innerRadius}
         fill="#4A4A4A"
+        key="rightEye"
       />
       <motion.circle
         cx={useConstrainedX(leftEyeX, leftEyeY, leftEyeCenterX, CenterY, innerRadius, outerRadius)}
         cy={useConstrainedY(leftEyeX, leftEyeY, leftEyeCenterX, CenterY, innerRadius, outerRadius)}
         r={innerRadius}
         fill="#4A4A4A"
+        key="leftEye"
       />
       <path
         fillRule="evenodd"

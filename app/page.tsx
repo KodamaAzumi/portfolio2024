@@ -9,10 +9,10 @@ export default function Home() {
   return (
     <div>
       <AnimatePresence mode="wait">
-        <Top />
+        <Top key="top" />
+        <About key="about" />
+        <Products key="products" />
       </AnimatePresence>
-      <About />
-      <Products />
       {/* <Blog /> */}
     </div>
   );
