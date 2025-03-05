@@ -27,7 +27,7 @@ export default function GrowUi() {
           </div>
           <GrowUiSection
             head={'育てるUIとは'}
-            paragraph="ユーザーがWebサイトなどを利用していく過程で、そのユーザー特有の様態に変化していくUIのことを「育てるUI」と定義し、そのテーマに沿って4つのGoogle Chrome 拡張機能を作りました。。"
+            paragraph="ユーザーがWebサイトなどを利用していく過程で、そのユーザー特有の様態に変化していくUIのことを「育てるUI」と定義し、そのテーマに沿って4つのGoogle Chrome 拡張機能を作りました。"
             videoid="dSiDWlFj85M"
           />
           <GrowUiSection
